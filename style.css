@@ -11,6 +11,12 @@ header div {
   gap: 1rem;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 h1 {
   /* For font-sizes use ems. */
   font-size: 3em;
