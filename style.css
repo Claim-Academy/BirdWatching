@@ -17,8 +17,26 @@ header {
   align-items: center;
 }
 
+li {
+  list-style: none;
+}
+
 h1 {
   /* For font-sizes use ems. */
   font-size: 3em;
   font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: goldenrod;
+  padding: 1rem;
 }
