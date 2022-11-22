@@ -1,3 +1,13 @@
 header, main, footer {
   background-color: greenyellow;
 }
+
+/* GENERAL CHILD SELECTOR: Select any/all descendants that are 'div' inside of 'header */
+header div {
+  display: flex;
+  align-items: center;
+
+  /* For spacing, use rems. */
+  gap: 1rem;
+}
+
