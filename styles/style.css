@@ -52,4 +52,15 @@ nav a:hover {
 main {
   margin: 1rem 0;
   padding: 1rem;
+  display: flex;
+  column-gap: 1.5rem;
+}
+
+main section {
+  background-color: aqua;
+  padding: 0 1rem;
+}
+
+main section:first-child {
+  min-width: 60%;
 }
