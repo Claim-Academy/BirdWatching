@@ -2,6 +2,12 @@ header, main, footer {
   background-color: greenyellow;
 }
 
+img {
+  /* Prevent images from spilling outside of the parent. */
+  max-width: 100%;
+  height: auto;
+}
+
 /* GENERAL CHILD SELECTOR: Select any/all descendants that are 'div' inside of 'header */
 header div {
   display: flex;
