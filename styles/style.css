@@ -93,3 +93,7 @@ main section:last-child img:nth-child(3) {
 main section:last-child img:last-child {
   grid-area: img-4;
 }
+
+footer {
+  padding: 1rem 0.5rem;
+}
