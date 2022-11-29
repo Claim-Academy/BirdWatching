@@ -71,6 +71,18 @@ main section:first-child {
   min-width: 60%;
 }
 
+main section:first-child img {
+  transition: opacity 0.5s ease-in-out;
+}
+
+main section:first-child img:hover {
+  opacity: 0;
+}
+
+main section:first-child p:last-child {
+  /* opacity: 0; */
+}
+
 main section:last-child {
   display: grid;
 
@@ -102,4 +114,14 @@ main section:last-child img:last-child {
 
 footer {
   padding: 1rem 0.5rem;
+}
+
+/* TODO: Simplify the CSS by using these classes. */
+.flex {
+  display: flex;
+}
+
+.flex--center {
+  align-items: center;
+  justify-items: center;
 }
