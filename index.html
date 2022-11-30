@@ -9,9 +9,9 @@
     <title>Bird Watching</title>
   </head>
   <body>
-    <header class="flex flex--center">
+    <header class="flex flex--items-center flex--content-center flex--col">
       <!-- We use a 'div' simply to group the 'h1' and the 'logo' for CSS purposes. The 'div' becomes a parent. -->
-      <div>
+      <div class="flex flex--items-center">
         <h1>Bird Watching</h1>
         <img
           src="./images/bird.jpg"
@@ -22,7 +22,7 @@
       </div>
 
       <nav>
-        <ul>
+        <ul class="flex">
           <li><a href="./index.html">Home</a></li>
           <li><a href="./about.html">About</a></li>
           <li><a href="./contact.html">Contact</a></li>
@@ -30,7 +30,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="flex">
       <section>
         <h2>Welcome</h2>
 
@@ -45,12 +45,13 @@
           out into the great outdoors
         </p>
 
-        <div class="flex flex--center relative">
+        <div class="flex flex--content-center flex--items-center relative">
           <img
             src="./images/avatar.png"
             alt="generic avatar"
             width="499"
             height="499"
+            class="absolute"
           />
           <p>Hello! 👋🏾</p>
         </div>

@@ -1,4 +1,6 @@
-header, main, footer {
+header,
+main,
+footer {
   background-color: greenyellow;
 }
 
@@ -10,9 +12,6 @@ img {
 
 /* GENERAL CHILD SELECTOR: Select any/all descendants that are 'div' inside of 'header */
 header div {
-  display: flex;
-  align-items: center;
-
   /* For spacing, use rems. */
   gap: 1rem;
 }
@@ -29,10 +28,6 @@ h1 {
 
 h2 {
   font-size: 2.441rem;
-}
-
-nav ul {
-  display: flex;
 }
 
 nav a {
@@ -52,7 +47,6 @@ nav a:hover {
 main {
   margin: 1rem 0;
   padding: 1rem;
-  display: flex;
   column-gap: 1.5rem;
 }
 
@@ -66,7 +60,6 @@ main section:first-child {
 }
 
 main section:first-child img {
-  position: absolute;
   top: 0;
   left: 0;
   width: 250px;
@@ -78,7 +71,7 @@ main section:first-child img:hover {
   opacity: 0;
 }
 
-main section:first-child img:hover ~ p {
+main section:first-child img:hover~p {
   opacity: 1;
 }
 
@@ -97,7 +90,7 @@ main section:first-child .flex {
 main section:last-child {
   display: grid;
 
-  grid-template-areas: 
+  grid-template-areas:
     "header header"
     "img-1 img-2"
     "img-3 img-4";
@@ -127,14 +120,24 @@ footer {
   padding: 1rem 0.5rem;
 }
 
-/* TODO: Simplify the CSS by using these classes. */
+.absolute {
+  position: absolute;
+}
+
 .flex {
   display: flex;
 }
 
-.flex--center {
-  align-items: center;
+.flex--col {
+  flex-direction: column;
+}
+
+.flex--content-center {
   justify-content: center;
+}
+
+.flex--items-center {
+  align-items: center;
 }
 
 .relative {
